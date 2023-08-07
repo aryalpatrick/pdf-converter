@@ -4,7 +4,6 @@
 <head>
     <title>Image to PDF Converter</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
- 
 </head>
 
 <body>
@@ -13,20 +12,18 @@
 
         <form action="/convert" method="post" enctype="multipart/form-data">
             <input id="images" type="file" name="images" accept="image/*" multiple>
-            <label for="images">
-            <div id="lbl">
-                Click to choose Images
-            </div>
+            <label for="images" id="file-label">
+                <div id="lbl">
+                    Click to choose Images
+                </div>
             </label>
             <div id="btn-con">
                 <button type="submit" id="button">Convert to PDF</button>
-
             </div>
-
         </form>
-
     </div>
 
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
