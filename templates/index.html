@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Image to PDF Converter</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+ 
 </head>
+
 <body>
-    <h1>Image to PDF Converter</h1>
-    <div id="div-form">
-    <form action="/convert" method="post" enctype="multipart/form-data">
-        <input type="file" name="images" accept="image/*" multiple>
-        <div id="btn-con">
-        <button type="submit" id="button">Convert to PDF</button>
+    <div id="main">
+        <h1>Image to PDF Converter</h1>
+
+        <form action="/convert" method="post" enctype="multipart/form-data">
+            <input id="images" type="file" name="images" accept="image/*" multiple>
+            <label for="images">
+            <div id="lbl">
+                Click to choose Images
+            </div>
+            </label>
+            <div id="btn-con">
+                <button type="submit" id="button">Convert to PDF</button>
+
+            </div>
+
+        </form>
+
     </div>
-    </form>
-</div>
+
 </body>
+
 </html>
