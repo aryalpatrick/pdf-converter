@@ -7,9 +7,7 @@
 }
 
 #main {
-
     text-align: center;
-
 }
 
 h1 {
@@ -53,11 +51,43 @@ h1 {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-
 }
-#button:hover{
+
+#button:hover {
     background-color: #111;
 }
-#lbl:hover{
+
+#lbl:hover {
     background-color: rgb(88, 6, 6);
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #lbl {
+        width: 80%;
+    }
+
+    #button {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    #lbl {
+        width: 90%;
+        font-size: large;
+    }
+
+    #button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
 }
